@@ -1,0 +1,51 @@
+<!--header start-->
+<header>
+    <a href="/">
+        <img src="../imagens/logo-ufam-icet.png" alt="logo-ufam-icet" id="logo">
+    </a>
+    <!-- Menu de navegação -->
+    <nav>
+        <ul>
+            <li><a href="/login">Gerencia</a></li>
+        </ul>
+    </nav>
+</header>
+<!--header end-->
+
+<!--section menu start-->
+<section class="menu">
+    <h2>Solicitação</h2>
+    <div class="info-box">
+        <ul>
+            <li><strong>Protocolo:</strong> {{protocoloEncontrado.protocolo}}</li>
+            <li><strong>Nome:</strong> {{protocoloEncontrado.nome}}</li>
+            <li><strong>Email:</strong> {{protocoloEncontrado.email}}</li>
+            <li><strong>Siape:</strong> {{protocoloEncontrado.siape}}</li>
+            <li><strong>Bloco:</strong> {{protocoloEncontrado.bloco}}</li>
+            <li><strong>Sala:</strong> {{protocoloEncontrado.sala}}</li>
+            <li><strong>Descrição do Problema:</strong> {{protocoloEncontrado.descricaoProblema}}</li>
+            <li><strong>Data da Solicitação:</strong> {{protocoloEncontrado.data_solicitacao}}</li>
+            <li><strong>Status:</strong> 
+                <span class="status-{{protocoloEncontrado.status}}">
+                    {{protocoloEncontrado.status}}
+                </span>
+            </li>
+        </ul>
+    </div>
+    <div class="form-solicitacao">
+        <br><a href="/">voltar</a>
+    </div>
+</section>
+
+
+<!--section menu end-->
+
+<!--footer start-->
+<footer>
+    <div class="container-footer">
+        <p id="contact">Instituto de Ciências Exatas e Tecnologia</p>
+        <p>Universidade Federal do Amazonas</p>
+        <p>Av. Nossa Senhora do Rosário, 3863 - Bairro Tiradentes, Itacoatiara</p>
+    </div>
+</footer>
+<!--footer end-->

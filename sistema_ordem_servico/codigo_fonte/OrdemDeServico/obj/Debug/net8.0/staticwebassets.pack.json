@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Usuário\\Documents\\UFAM\\6° Período\\Gerência de Projeto de Software\\Ordem de Serviço com C#\\ordem_de_servico_api\\OrdemDeServico\\OrdemDeServico\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\Usuário\\Documents\\UFAM\\6° Período\\Gerência de Projeto de Software\\Ordem de Serviço com C#\\ordem_de_servico_api\\OrdemDeServico\\OrdemDeServico\\wwwroot\\imagens\\logo-ufam-icet.png",
+      "PackagePath": "staticwebassets\\imagens\\logo-ufam-icet.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.OrdemDeServico.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.OrdemDeServico.props",
+      "PackagePath": "build\\OrdemDeServico.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.OrdemDeServico.props",
+      "PackagePath": "buildMultiTargeting\\OrdemDeServico.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.OrdemDeServico.props",
+      "PackagePath": "buildTransitive\\OrdemDeServico.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

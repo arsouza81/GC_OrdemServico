@@ -1,0 +1,320 @@
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+/*
+header start
+*/
+/* header start */
+header {
+  /* background: #53b800; */
+  background: #0F7522;
+  color: white;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: padding 0.3s;
+}
+
+#logo {
+  height: 100px;
+  width: 250px;
+  margin-right: 20px; /* Adiciona espaço entre o logotipo e o formulário de busca */
+}
+
+#search-form {
+  display: flex;
+  align-items: center;
+}
+
+#search-form input[type="text"] {
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  height: 40px;
+  margin-right: 10px; /* Adiciona espaço entre o campo de texto e o botão */
+  margin-top: 10px;
+}
+
+#search-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100px;
+  height: 40px;
+}
+
+#search-form button:hover {
+  background-color: #0056b3;
+}
+
+nav {
+  margin-right: 40px;
+}
+
+
+nav ul {
+  list-style-type: none; 
+  margin: 0;
+  padding: 0;
+  display: flex; 
+}
+
+nav li {
+  margin-left: 20px; /* Espaçamento entre os itens do menu */
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+}
+
+nav a:hover {
+  color: #0056b3;
+}
+
+/*
+header end
+*/
+
+/*
+section menu start
+*/
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1; /* Para ocupar o espaço restante */
+  margin-top: 250px;
+}
+
+.form-servidor {
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.form-login {
+  text-align: center;
+  max-width: 300px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+button {
+  width: 50%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-items: right;
+  justify-content: right;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.menu h1 {
+  color: black;
+  font-size: 5rem;
+}
+
+.menu h2 {
+  color: black;
+  font-size: 3rem;
+}
+
+.menu form #descricao-problema {
+  resize: none;
+  height: 350px;
+  text-align: left;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.form-end {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-end a {
+  text-decoration: none;
+  color: black;
+}
+
+.div-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-end a:hover {
+  color: #0056b3;
+}
+
+.form-solicitacao {
+  width: 100%;
+  display: flex;
+  margin: 10px;
+  margin-left: 20px;
+}
+
+.form-solicitacao a {
+  text-decoration: none;
+  color: black;
+}
+
+.form-solicitacao a:hover {
+  color: #0056b3;
+}
+
+.status-em_andamento {
+  background-color: rgba(255, 255, 0, 0.5); /* Amarelo transparente */
+  padding: 2px;
+}
+
+.status-concluída {
+  background-color: rgba(0, 255, 0, 0.5); /* Verde transparente */
+  padding: 2px;
+}
+
+.status-pendente {
+  background-color: rgba(20, 117, 228, 0.5); /* Laranja transparente */
+  padding: 2px;
+}
+
+.status-descartada {
+  background-color: rgba(255, 0, 0, 0.5); /* Vermelho transparente */
+  padding: 2px;
+}
+
+
+
+
+
+/* data formulario */
+#dateForm {
+  width: 100%;
+  text-align: center;
+}
+
+#dateForm label,
+#dateForm input {
+  display: block;
+}
+
+#datepicker {
+  width: 50%;
+  margin: 25px auto; 
+}
+
+#button-selecionar-data {
+  width: 25%;
+}
+
+/*box para guardar as informações de solicitação*/
+.info-box {
+  margin-top: 20px;
+  max-height: 400px; 
+  max-width: 500px;
+  height: 400px;
+  width: 500px;
+  overflow-y: auto; 
+  border: 1px solid #ccc; 
+  padding: 10px; 
+}
+
+/*botao para voltar*/
+#voltar-index-gerente {
+  display: inline-block; /* Permite adicionar margem à direita */
+  margin-top: 10px; 
+  margin-right: 300px;
+  padding: 5px 10px; 
+  background-color: #007bff; 
+  color: #fff; 
+  text-decoration: none; 
+  border-radius: 5px; 
+}
+
+#voltar-index-gerente:hover {
+  background-color: #0056b3;
+}
+
+/*customização da lista de nomes*/
+.custom-list {
+  list-style-type: none; 
+  padding: 0; 
+}
+
+.custom-list li {
+  border-bottom: none; 
+}
+
+.custom-list li a {
+  text-decoration: none; 
+  color: #000; 
+}
+
+.custom-list li a:hover {
+  text-decoration: underline; 
+}
+
+.info-box ul {
+  list-style-type: none;
+}
+
+
+/*
+section menu end
+*/
+
+/*
+footer start
+*/
+footer {
+  background: #0f0f0f; /* Cor de fundo para o footer */
+  color: white; /* Cor do texto no footer */
+  padding: 10px; /* Adicionei um valor maior para o padding para melhorar a aparência */
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+  bottom: 0;
+}
+/*
+footer end
+*/

@@ -1,0 +1,42 @@
+<!--header start-->
+<header>
+    <a href="/">
+        <img src="../imagens/logo-ufam-icet.png" alt="logo-ufam-icet" id="logo">
+    </a>
+</header>
+<!--header end-->
+
+<!--mensagem de erro se houver-->
+{{#if erro}}
+    <div class="alert alert-danger" style="margin-top: 15px;">{{erro}}</div>
+{{/if}}
+
+<!--section menu start-->
+<section class="menu">
+    <h1>Ordem de Serviço</h1>
+    <form action="/user/login" method="post" class="form-login">
+        <h2>Gerência</h2>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="password">Senha:</label>
+        <input type="password" name="password" id="password" required>
+
+        <div class="form-end">
+            <br><a href="/">voltar</a>
+            <button type="submit">Entrar</button>
+        </div>
+    </form>
+</section>
+<!--section menu end-->
+
+<!--footer start-->
+<footer>
+    <div class="container-footer">
+        <p id="contact">Instituto de Ciências Exatas e Tecnologia</p>
+        <p>Universidade Federal do Amazonas</p>
+        <p>Av. Nossa Senhora do Rosário, 3863 - Bairro Tiradentes, Itacoatiara</p>
+    </div>
+</footer>
+<!--footer end-->

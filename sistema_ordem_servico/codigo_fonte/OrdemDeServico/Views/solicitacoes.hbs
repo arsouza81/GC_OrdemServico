@@ -1,0 +1,44 @@
+<!--header start-->
+<header>
+    <a href="/index_gerente">
+        <img src="../imagens/logo-ufam-icet.png" alt="logo-ufam-icet" id="logo">
+    </a>
+    <!-- Menu de navegação -->
+    <nav>
+        <ul>
+            <li><a href="/logout">Sair</a></li>
+        </ul>
+    </nav>
+</header>
+<!--header end-->
+
+<section class="menu">
+    <h2>Solicitações do dia: {{DiaSelecionado}}</h2>
+    <div class="info-box">
+        {{#if NomesEIds}}
+        <p>Quantidade de solicitações: {{NomesEIds.length}}</p>
+        <ul class="custom-list">
+            {{#each NomesEIds}}
+            <li><a href="/user/detalhes_solicitacao/{{this.Id}}">Servidor: {{this.Nome}}, Data: {{this.DataSolicitacao}}</a></li>
+            {{/each}}
+        </ul>
+        {{else}}
+        <p>Nenhuma solicitação encontrada para esta data.</p>
+        {{/if}}
+    </div>
+    <div class="form-solicitacao" style="margin-left: 250px;">
+        <a href="/index_gerente">voltar</a>
+    </div>
+</section>
+
+
+
+<!--footer start-->
+<footer>
+    <div class="container-footer">
+        <p id="contact">Instituto de Ciências Exatas e Tecnologia</p>
+        <p>Universidade Federal do Amazonas</p>
+        <p>Av. Nossa Senhora do Rosário, 3863 - Bairro Tiradentes, Itacoatiara</p>
+    </div>
+</footer>
+<!--footer end-->

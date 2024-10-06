@@ -1,0 +1,63 @@
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- jQuery UI -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+<!--header start-->
+<header>
+    <a href="/index_gerente">
+        <img src="../imagens/logo-ufam-icet.png" alt="logo-ufam-icet" id="logo">
+    </a>
+    <!-- Menu de navegação -->
+    <nav>
+        <ul>
+            <li><a href="/user/logout">Sair</a></li>
+        </ul>
+    </nav>
+</header>
+<!--header end-->
+<!-- Mensagem de erro se houver -->
+{{#if erro}}
+<div class="alert alert-danger" style="margin-top: 15px;">{{erro}}</div>
+{{/if}}
+
+<!--section menu start-->
+<section class="menu">
+    <h2>Solicitações Registradas</h2>
+    <br><br>
+    <form class="dateForm" id="dateForm" action="/user/selecionar_data" method="get" autocomplete="off">
+        <label for="datepicker">Selecione uma data:</label>
+        <input type="text" id="datepicker" name="data_solicitacao" required>
+        <button type="submit" id="button-selecionar-data">Pesquisar</button>
+    </form>
+</section>
+<!--section menu end-->
+<!--footer start-->
+<footer>
+    <div class="container-footer">
+        <p id="contact">Instituto de Ciências Exatas e Tecnologia</p>
+        <p>Universidade Federal do Amazonas</p>
+        <p>Av. Nossa Senhora do Rosário, 3863 - Bairro Tiradentes, Itacoatiara</p>
+    </div>
+</footer>
+<!--footer end-->
+<!-- Selecionar data -->
+<script>
+    $(document).ready(function () {
+        $("#datepicker").datepicker({
+            dateFormat: 'dd/mm/yy'
+        });
+
+        // Validação do formulário
+        $("#dateForm").on('submit', function (event) {
+            const datepicker = $('#datepicker').val();
+
+            if (!datepicker) {
+                event.preventDefault(); // Impede o envio do formulário
+                alert("O formulário precisa de uma data."); // Exibe a mensagem de erro
+            }
+        });
+    });
+</script>

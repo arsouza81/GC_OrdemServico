@@ -1,0 +1,83 @@
+<!--header start-->
+<header>
+    <a href="/index_gerente">
+        <img src="../imagens/logo-ufam-icet.png" alt="logo-ufam-icet" id="logo">
+    </a>
+    <!-- Menu de navegação -->
+    <nav>
+        <ul>
+            <li><a href="/logout">Sair</a></li>
+        </ul>
+    </nav>
+</header>
+<!--header end-->
+
+<!-- Detalhes da Solicitação -->
+<section class="menu">
+    <h2>Detalhes da Solicitação</h2>
+    <div class="info-box">
+        <p><strong>Nome:</strong> {{ solicitacao.nome }}</p>
+        <p><strong>Email:</strong> {{ solicitacao.email }}</p>
+        <p><strong>SIAPE:</strong> {{ solicitacao.siape }}</p>
+        <p><strong>Bloco:</strong> {{ solicitacao.bloco }}</p>
+        <p><strong>Sala:</strong> {{ solicitacao.sala }}</p>
+        <p><strong>Descrição do Problema:</strong> {{ solicitacao.descricaoProblema }}</p>
+        <p><strong>Status: </strong>
+            <span id="status" class="status-{{solicitacao.status}}" onclick="changeStatus()" style="cursor: pointer;" title="Clique para alterar o status">
+                {{solicitacao.status}}
+            </span>
+            <select id="novo_status" style="display: none;">
+                <option value="pendente">Pendente</option>
+                <option value="em_andamento">Em Andamento</option>
+                <option value="concluída">Concluída</option>
+                <option value="descartada">Descartada</option>
+            </select>
+            <button id="atualizar_status" onclick="atualizarStatus()" style="display: none; font-size: smaller; padding: 5px 10px; width: 90px;">Atualizar</button>
+        </p>
+    </div>
+    <div class="form-solicitacao">
+        <a href="/index_gerente">Voltar</a>
+    </div>
+</section>
+
+
+<!--footer start-->
+<footer>
+    <div class="container-footer">
+        <p id="contact">Instituto de Ciências Exatas e Tecnologia</p>
+        <p>Universidade Federal do Amazonas</p>
+        <p>Av. Nossa Senhora do Rosário, 3863 - Bairro Tiradentes, Itacoatiara</p>
+    </div>
+</footer>
+<!--footer end-->
+
+
+<script>
+    function changeStatus() {
+        document.getElementById('status').style.display = 'none';
+        document.getElementById('novo_status').style.display = 'inline-block';
+        document.getElementById('atualizar_status').style.display = 'inline-block';
+    }
+</script>
+
+<script>
+    function atualizarStatus() {
+        // Captura o valor selecionado no select
+        var novoStatus = document.getElementById('novo_status').value;
+
+        // Captura o protocolo da solicitação
+        var protocolo = "{{ solicitacao.protocolo }}"; // Substitua pela forma como você obtém o protocolo
+
+        // Envia uma requisição AJAX para o servidor
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "/atualizar_status", true);
+        xhr.setRequestHeader("Content-Type", "application/json");
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                // Atualiza a página ou exibe uma mensagem de confirmação
+                location.reload(); // Atualiza a página após a atualização do status
+            }
+        };
+        xhr.send(JSON.stringify({ protocolo: protocolo, novoStatus: novoStatus }));
+    }
+</script>

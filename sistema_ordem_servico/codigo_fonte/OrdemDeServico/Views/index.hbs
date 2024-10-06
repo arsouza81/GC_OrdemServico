@@ -1,0 +1,123 @@
+<!--header start-->
+<header>
+    <a href="/">
+        <img src="../imagens/logo-ufam-icet.png" alt="logo-ufam-icet" id="logo">
+    </a>
+
+    <!-- Menu de navegação -->
+    <!-- Formulário de busca -->
+    <form id="search-form" action="/formServidor/buscar_protocolo" method="GET">
+        <input type="text" name="protocolo" placeholder="Digite o protocolo">
+        <button type="submit">Buscar</button>
+    </form>
+
+    <nav>
+        <ul>
+            <li><a href="/login">Acesso Restrito</a></li>
+        </ul>
+    </nav>
+</header>
+<!--header end-->
+{{#if erro}}
+<div id="erro-message" class="alert alert-danger" style="margin-top: 0px;">{{erro}}</div>
+{{/if}}
+
+{{#if successMessage}}
+<div id="success-message" class="alert alert-success" style="margin-top: 0px;">{{successMessage}}</div>
+{{/if}}
+
+
+<!--section menu start-->
+<section class="menu">
+    <h1>Ordem de Serviço</h1>
+    <form action="/formServidor/formulario" class="form-servidor" method="post">
+        <div class="div-form">
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome">
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+
+                <label for="siape">Siape:</label>
+                <input type="number" name="siape" id="siape">
+
+                <label for="bloco">Bloco:</label>
+                <input type="text" name="bloco" id="bloco">
+
+                <label for="sala">Sala:</label>
+                <input type="number" name="sala" id="sala">
+            </div>
+
+            <div>
+                <label for="descricao-problema">Descrição do Problema:</label>
+                <textarea name="descricaoProblema" id="descricaoProblema" cols="30" rows="10"></textarea>
+
+                <button type="submit">Enviar</button>
+            </div>
+        </div>
+    </form>
+</section>
+<!--section menu end-->
+<!--footer start-->
+<footer>
+    <div class="container-footer">
+        <p id="contact">Instituto de Ciências Exatas e Tecnologia</p>
+        <p>Universidade Federal do Amazonas</p>
+        <p>Av. Nossa Senhora do Rosário, 3863 - Bairro Tiradentes, Itacoatiara</p>
+    </div>
+</footer>
+<!--footer end-->
+
+
+<script>
+    // Função para ocultar mensagens após 5 segundos
+    setTimeout(function () {
+        var erroMessage = document.getElementById('erro-message');
+        if (erroMessage) {
+            erroMessage.style.display = 'none';
+        }
+
+        var successMessage = document.getElementById('success-message');
+        if (successMessage) {
+            successMessage.style.display = 'none';
+        }
+    }, 5000);
+</script>
+
+<script>
+    document.querySelector('.form-servidor').addEventListener('submit', function (event) {
+        const nome = document.getElementById('nome').value;
+        const email = document.getElementById('email').value;
+        const siape = document.getElementById('siape').value;
+        const bloco = document.getElementById('bloco').value;
+        const sala = document.getElementById('sala').value;
+        const descricaoProblema = document.getElementById('descricaoProblema').value;
+
+        let errorMessages = [];
+
+        if (!nome) {
+            errorMessages.push("O formulário precisa de um nome de usuário.");
+        }
+        if (!email) {
+            errorMessages.push("O formulário precisa de um e-mail.");
+        }
+        if (!siape) {
+            errorMessages.push("O formulário precisa de um siape.");
+        }
+        if (!bloco) {
+            errorMessages.push("O formulário precisa de um bloco.");
+        }
+        if (!sala) {
+            errorMessages.push("O formulário precisa de uma sala.");
+        }
+        if (!descricaoProblema) {
+            errorMessages.push("O formulário precisa de uma descrição para o problema.");
+        }
+
+        if (errorMessages.length > 0) {
+            event.preventDefault(); // Impede o envio do formulário
+            alert(errorMessages.join("\\n")); // Exibe os erros
+        }
+    });
+</script>
