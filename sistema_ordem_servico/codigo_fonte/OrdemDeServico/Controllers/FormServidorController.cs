@@ -128,6 +128,16 @@ public class FormServidorController : ControllerBase {
 
     [HttpPost("formulario")]
     public async Task<IActionResult> PostFormulario([FromForm] CreateFormServidorDto formDto) {
+        //Validar se o SIAPE possui 7 dígitos
+        if (formDto.Siape.ToString().Length != 7 || !formDto.Siape.ToString().All(char.IsDigit)) {
+            var errorMessage = "O SIAPE deve ter 7 digitos";
+            return Content($@"
+            <script>
+                alert('{errorMessage}');
+                window.location.href = '{Url.Action("Index", "Pagina")}';
+            </script>", "text/html");
+        }
+
         if (!ModelState.IsValid) {
             return BadRequest(ModelState);
         }
