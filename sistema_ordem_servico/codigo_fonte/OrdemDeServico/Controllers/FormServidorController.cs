@@ -138,6 +138,16 @@ public class FormServidorController : ControllerBase {
             </script>", "text/html");
         }
 
+        if(formDto.DescricaoProblema.ToString().Length>600) {
+            var errorMessage = "A descricao nao pode passar dos 600 caracteres.";
+
+            return Content($@"
+        <script>
+            alert('{errorMessage}');
+            window.location.href = '{Url.Action("Index", "Pagina")}'; // Redireciona para a página inicial
+        </script>", "text/html");
+        }
+
         if (!ModelState.IsValid) {
             return BadRequest(ModelState);
         }
