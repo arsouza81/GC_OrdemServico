@@ -3058,11 +3058,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuário\\Documents\\UFAM\\6° Período\\Gerência de Configuração\\git\\GC_OrdemServico\\sistema_ordem_servico\\codigo_fonte\\OrdemDeServico\\OrdemDeServico.csproj",
+      "projectUniqueName": "C:\\Users\\Usuário\\Documents\\UFAM\\6° Período\\Gerência de Configuração\\git - issue 3\\GC_OrdemServico\\sistema_ordem_servico\\codigo_fonte\\OrdemDeServico\\OrdemDeServico.csproj",
       "projectName": "OrdemDeServico",
-      "projectPath": "C:\\Users\\Usuário\\Documents\\UFAM\\6° Período\\Gerência de Configuração\\git\\GC_OrdemServico\\sistema_ordem_servico\\codigo_fonte\\OrdemDeServico\\OrdemDeServico.csproj",
+      "projectPath": "C:\\Users\\Usuário\\Documents\\UFAM\\6° Período\\Gerência de Configuração\\git - issue 3\\GC_OrdemServico\\sistema_ordem_servico\\codigo_fonte\\OrdemDeServico\\OrdemDeServico.csproj",
       "packagesPath": "C:\\Users\\Usuário\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuário\\Documents\\UFAM\\6° Período\\Gerência de Configuração\\git\\GC_OrdemServico\\sistema_ordem_servico\\codigo_fonte\\OrdemDeServico\\obj\\",
+      "outputPath": "C:\\Users\\Usuário\\Documents\\UFAM\\6° Período\\Gerência de Configuração\\git - issue 3\\GC_OrdemServico\\sistema_ordem_servico\\codigo_fonte\\OrdemDeServico\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Usuário\\AppData\\Roaming\\NuGet\\NuGet.Config",

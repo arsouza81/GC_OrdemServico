@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Kb8fOV7zIeI=",
+  "dgSpecHash": "dvWJ244FvDU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuário\\Documents\\UFAM\\6° Período\\Gerência de Configuração\\git\\GC_OrdemServico\\sistema_ordem_servico\\codigo_fonte\\OrdemDeServico\\OrdemDeServico.csproj",
+  "projectFilePath": "C:\\Users\\Usuário\\Documents\\UFAM\\6° Período\\Gerência de Configuração\\git - issue 3\\GC_OrdemServico\\sistema_ordem_servico\\codigo_fonte\\OrdemDeServico\\OrdemDeServico.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuário\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Usuário\\.nuget\\packages\\bouncycastle.cryptography\\2.4.0\\bouncycastle.cryptography.2.4.0.nupkg.sha512",

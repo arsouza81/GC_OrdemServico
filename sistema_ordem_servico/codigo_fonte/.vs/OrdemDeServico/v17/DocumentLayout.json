@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Usu\u00E1rio\\Documents\\UFAM\\6\u00B0 Per\u00EDodo\\Ger\u00EAncia de Configura\u00E7\u00E3o\\git\\GC_OrdemServico\\sistema_ordem_servico\\codigo_fonte\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{36F48B8D-0A97-4FE3-99B8-359910AFB7FA}|OrdemDeServico\\OrdemDeServico.csproj|c:\\users\\usu\u00E1rio\\documents\\ufam\\6\u00B0 per\u00EDodo\\ger\u00EAncia de configura\u00E7\u00E3o\\git\\gc_ordemservico\\sistema_ordem_servico\\codigo_fonte\\ordemdeservico\\controllers\\formservidorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36F48B8D-0A97-4FE3-99B8-359910AFB7FA}|OrdemDeServico\\OrdemDeServico.csproj|solutionrelative:ordemdeservico\\controllers\\formservidorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36F48B8D-0A97-4FE3-99B8-359910AFB7FA}|OrdemDeServico\\OrdemDeServico.csproj|c:\\users\\usu\u00E1rio\\documents\\ufam\\6\u00B0 per\u00EDodo\\ger\u00EAncia de configura\u00E7\u00E3o\\git\\gc_ordemservico\\sistema_ordem_servico\\codigo_fonte\\ordemdeservico\\services\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36F48B8D-0A97-4FE3-99B8-359910AFB7FA}|OrdemDeServico\\OrdemDeServico.csproj|solutionrelative:ordemdeservico\\services\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36F48B8D-0A97-4FE3-99B8-359910AFB7FA}|OrdemDeServico\\OrdemDeServico.csproj|c:\\users\\usu\u00E1rio\\documents\\ufam\\6\u00B0 per\u00EDodo\\ger\u00EAncia de configura\u00E7\u00E3o\\git\\gc_ordemservico\\sistema_ordem_servico\\codigo_fonte\\ordemdeservico\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{36F48B8D-0A97-4FE3-99B8-359910AFB7FA}|OrdemDeServico\\OrdemDeServico.csproj|solutionrelative:ordemdeservico\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36F48B8D-0A97-4FE3-99B8-359910AFB7FA}|OrdemDeServico\\OrdemDeServico.csproj|c:\\users\\usu\u00E1rio\\documents\\ufam\\6\u00B0 per\u00EDodo\\ger\u00EAncia de configura\u00E7\u00E3o\\git\\gc_ordemservico\\sistema_ordem_servico\\codigo_fonte\\ordemdeservico\\data\\ordemcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36F48B8D-0A97-4FE3-99B8-359910AFB7FA}|OrdemDeServico\\OrdemDeServico.csproj|solutionrelative:ordemdeservico\\data\\ordemcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36F48B8D-0A97-4FE3-99B8-359910AFB7FA}|OrdemDeServico\\OrdemDeServico.csproj|c:\\users\\usu\u00E1rio\\documents\\ufam\\6\u00B0 per\u00EDodo\\ger\u00EAncia de configura\u00E7\u00E3o\\git\\gc_ordemservico\\sistema_ordem_servico\\codigo_fonte\\ordemdeservico\\services\\iemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36F48B8D-0A97-4FE3-99B8-359910AFB7FA}|OrdemDeServico\\OrdemDeServico.csproj|solutionrelative:ordemdeservico\\services\\iemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36F48B8D-0A97-4FE3-99B8-359910AFB7FA}|OrdemDeServico\\OrdemDeServico.csproj|c:\\users\\usu\u00E1rio\\documents\\ufam\\6\u00B0 per\u00EDodo\\ger\u00EAncia de configura\u00E7\u00E3o\\git\\gc_ordemservico\\sistema_ordem_servico\\codigo_fonte\\ordemdeservico\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36F48B8D-0A97-4FE3-99B8-359910AFB7FA}|OrdemDeServico\\OrdemDeServico.csproj|solutionrelative:ordemdeservico\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\Documents\\UFAM\\6\u00B0 Per\u00EDodo\\Ger\u00EAncia de Configura\u00E7\u00E3o\\git\\GC_OrdemServico\\sistema_ordem_servico\\codigo_fonte\\OrdemDeServico\\appsettings.json",
+              "RelativeDocumentMoniker": "OrdemDeServico\\appsettings.json",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\Documents\\UFAM\\6\u00B0 Per\u00EDodo\\Ger\u00EAncia de Configura\u00E7\u00E3o\\git\\GC_OrdemServico\\sistema_ordem_servico\\codigo_fonte\\OrdemDeServico\\appsettings.json",
+              "RelativeToolTip": "OrdemDeServico\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-01T01:07:49.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IEmailSender.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\Documents\\UFAM\\6\u00B0 Per\u00EDodo\\Ger\u00EAncia de Configura\u00E7\u00E3o\\git\\GC_OrdemServico\\sistema_ordem_servico\\codigo_fonte\\OrdemDeServico\\Services\\IEmailSender.cs",
+              "RelativeDocumentMoniker": "OrdemDeServico\\Services\\IEmailSender.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\Documents\\UFAM\\6\u00B0 Per\u00EDodo\\Ger\u00EAncia de Configura\u00E7\u00E3o\\git\\GC_OrdemServico\\sistema_ordem_servico\\codigo_fonte\\OrdemDeServico\\Services\\IEmailSender.cs",
+              "RelativeToolTip": "OrdemDeServico\\Services\\IEmailSender.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T01:05:27.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmailSender.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\Documents\\UFAM\\6\u00B0 Per\u00EDodo\\Ger\u00EAncia de Configura\u00E7\u00E3o\\git\\GC_OrdemServico\\sistema_ordem_servico\\codigo_fonte\\OrdemDeServico\\Services\\EmailSender.cs",
+              "RelativeDocumentMoniker": "OrdemDeServico\\Services\\EmailSender.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\Documents\\UFAM\\6\u00B0 Per\u00EDodo\\Ger\u00EAncia de Configura\u00E7\u00E3o\\git\\GC_OrdemServico\\sistema_ordem_servico\\codigo_fonte\\OrdemDeServico\\Services\\EmailSender.cs",
+              "RelativeToolTip": "OrdemDeServico\\Services\\EmailSender.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAwBQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T01:05:18.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrdemContext.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\Documents\\UFAM\\6\u00B0 Per\u00EDodo\\Ger\u00EAncia de Configura\u00E7\u00E3o\\git\\GC_OrdemServico\\sistema_ordem_servico\\codigo_fonte\\OrdemDeServico\\Data\\OrdemContext.cs",
+              "RelativeDocumentMoniker": "OrdemDeServico\\Data\\OrdemContext.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\Documents\\UFAM\\6\u00B0 Per\u00EDodo\\Ger\u00EAncia de Configura\u00E7\u00E3o\\git\\GC_OrdemServico\\sistema_ordem_servico\\codigo_fonte\\OrdemDeServico\\Data\\OrdemContext.cs",
+              "RelativeToolTip": "OrdemDeServico\\Data\\OrdemContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T01:04:52.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormServidorController.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\Documents\\UFAM\\6\u00B0 Per\u00EDodo\\Ger\u00EAncia de Configura\u00E7\u00E3o\\git\\GC_OrdemServico\\sistema_ordem_servico\\codigo_fonte\\OrdemDeServico\\Controllers\\FormServidorController.cs",
+              "RelativeDocumentMoniker": "OrdemDeServico\\Controllers\\FormServidorController.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\Documents\\UFAM\\6\u00B0 Per\u00EDodo\\Ger\u00EAncia de Configura\u00E7\u00E3o\\git\\GC_OrdemServico\\sistema_ordem_servico\\codigo_fonte\\OrdemDeServico\\Controllers\\FormServidorController.cs",
+              "RelativeToolTip": "OrdemDeServico\\Controllers\\FormServidorController.cs",
+              "ViewState": "AQIAAKAAAAAAAAAAAAAYwKYAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T00:51:35.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\Documents\\UFAM\\6\u00B0 Per\u00EDodo\\Ger\u00EAncia de Configura\u00E7\u00E3o\\git\\GC_OrdemServico\\sistema_ordem_servico\\codigo_fonte\\OrdemDeServico\\Program.cs",
+              "RelativeDocumentMoniker": "OrdemDeServico\\Program.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\Documents\\UFAM\\6\u00B0 Per\u00EDodo\\Ger\u00EAncia de Configura\u00E7\u00E3o\\git\\GC_OrdemServico\\sistema_ordem_servico\\codigo_fonte\\OrdemDeServico\\Program.cs",
+              "RelativeToolTip": "OrdemDeServico\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T00:27:20.966Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

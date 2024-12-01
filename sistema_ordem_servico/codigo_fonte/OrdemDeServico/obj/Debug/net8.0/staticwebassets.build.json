@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "C3bEStQizLISSqC2K24YAUPzY/UO7DASbaHRBIu/vfA=",
+  "Hash": "l9uUZvTsrhWd8Fqmfxz1qN69dWz5nEKcbS63pu6coY4=",
   "Source": "OrdemDeServico",
   "BasePath": "_content/OrdemDeServico",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "OrdemDeServico\\wwwroot",
       "Source": "OrdemDeServico",
-      "ContentRoot": "C:\\Users\\Usuário\\Documents\\UFAM\\6° Período\\Gerência de Projeto de Software\\Ordem de Serviço com C#\\ordem_de_servico_api\\OrdemDeServico\\OrdemDeServico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuário\\Documents\\UFAM\\6° Período\\Gerência de Configuração\\git\\GC_OrdemServico\\sistema_ordem_servico\\codigo_fonte\\OrdemDeServico\\wwwroot\\",
       "BasePath": "_content/OrdemDeServico",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Usuário\\Documents\\UFAM\\6° Período\\Gerência de Projeto de Software\\Ordem de Serviço com C#\\ordem_de_servico_api\\OrdemDeServico\\OrdemDeServico\\wwwroot\\css\\style.css",
+      "Identity": "C:\\Users\\Usuário\\Documents\\UFAM\\6° Período\\Gerência de Configuração\\git\\GC_OrdemServico\\sistema_ordem_servico\\codigo_fonte\\OrdemDeServico\\wwwroot\\css\\style.css",
       "SourceId": "OrdemDeServico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuário\\Documents\\UFAM\\6° Período\\Gerência de Projeto de Software\\Ordem de Serviço com C#\\ordem_de_servico_api\\OrdemDeServico\\OrdemDeServico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuário\\Documents\\UFAM\\6° Período\\Gerência de Configuração\\git\\GC_OrdemServico\\sistema_ordem_servico\\codigo_fonte\\OrdemDeServico\\wwwroot\\",
       "BasePath": "_content/OrdemDeServico",
       "RelativePath": "css/style.css",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
-      "Identity": "C:\\Users\\Usuário\\Documents\\UFAM\\6° Período\\Gerência de Projeto de Software\\Ordem de Serviço com C#\\ordem_de_servico_api\\OrdemDeServico\\OrdemDeServico\\wwwroot\\imagens\\logo-ufam-icet.png",
+      "Identity": "C:\\Users\\Usuário\\Documents\\UFAM\\6° Período\\Gerência de Configuração\\git\\GC_OrdemServico\\sistema_ordem_servico\\codigo_fonte\\OrdemDeServico\\wwwroot\\imagens\\logo-ufam-icet.png",
       "SourceId": "OrdemDeServico",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuário\\Documents\\UFAM\\6° Período\\Gerência de Projeto de Software\\Ordem de Serviço com C#\\ordem_de_servico_api\\OrdemDeServico\\OrdemDeServico\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Usuário\\Documents\\UFAM\\6° Período\\Gerência de Configuração\\git\\GC_OrdemServico\\sistema_ordem_servico\\codigo_fonte\\OrdemDeServico\\wwwroot\\",
       "BasePath": "_content/OrdemDeServico",
       "RelativePath": "imagens/logo-ufam-icet.png",
       "AssetKind": "All",
