@@ -128,6 +128,26 @@ public class FormServidorController : ControllerBase {
 
     [HttpPost("formulario")]
     public async Task<IActionResult> PostFormulario([FromForm] CreateFormServidorDto formDto) {
+        //Validar se o SIAPE possui 7 dígitos
+        if (formDto.Siape.ToString().Length != 7 || !formDto.Siape.ToString().All(char.IsDigit)) {
+            var errorMessage = "O SIAPE deve ter 7 digitos";
+            return Content($@"
+            <script>
+                alert('{errorMessage}');
+                window.location.href = '{Url.Action("Index", "Pagina")}';
+            </script>", "text/html");
+        }
+
+        if(formDto.DescricaoProblema.ToString().Length>600) {
+            var errorMessage = "A descricao nao pode passar dos 600 caracteres.";
+
+            return Content($@"
+        <script>
+            alert('{errorMessage}');
+            window.location.href = '{Url.Action("Index", "Pagina")}'; // Redireciona para a página inicial
+        </script>", "text/html");
+        }
+
         if (!ModelState.IsValid) {
             return BadRequest(ModelState);
         }
@@ -148,21 +168,43 @@ public class FormServidorController : ControllerBase {
         await _context.SaveChangesAsync();
 
         // Enviar e-mail para o e-mail fornecido no formulário
-        await _emailSender.SendEmailAsync(
-            formulario.Email,
-            "Sua Ordem de Serviço Recebida",
-            $"Sua ordem de serviço foi recebida com o protocolo: {formulario.Protocolo}. Estamos trabalhando nisso.");
+        if (IsValidEmail(formulario.Email)) {
+            await _emailSender.SendEmailAsync(
+                formulario.Email,
+                "Sua Ordem de Serviço Recebida",
+                $"Sua ordem de serviço foi recebida com o protocolo: {formulario.Protocolo}. Estamos trabalhando nisso.");
+        } else {
+            // Log ou tome uma ação apropriada
+            return BadRequest("O endereço de e-mail fornecido é inválido.");
+        }
+
 
         // Enviar e-mail para todos os usuários registrados
         var users = _context.Users.ToList();
         foreach (var user in users) {
-            await _emailSender.SendEmailAsync(
-                user.Email,
-                "Nova Ordem de Serviço Recebida",
-                $"Uma nova ordem de serviço foi criada com o protocolo: {formulario.Protocolo}.");
+            if (IsValidEmail(user.Email)) {
+                await _emailSender.SendEmailAsync(
+                    user.Email,
+                    "Nova Ordem de Serviço Recebida",
+                    $"Uma nova ordem de serviço foi criada com o protocolo: {formulario.Protocolo}.<br>" +
+                    $"Nome: {formulario.Nome}<br>" +
+                    $"Bloco: {formulario.Bloco}<br>" +
+                    $"Sala: {formulario.Sala}<br>" +
+                    $"Descrição: {formulario.DescricaoProblema}<br>");
+            } else {
+                // Log ou ignore o e-mail inválido
+                Console.WriteLine($"E-mail inválido encontrado: {user.Email}");
+            }
         }
 
-        return RedirectToAction("Index", "Pagina");
+        var alertMessage = "E-mail enviado com sucesso!.";
+        var redirectUrl = Url.Action("Index", "Pagina");
+
+        return Content($@"
+        <script>
+            alert('{alertMessage}');
+            window.location.href = '{redirectUrl}';
+        </script>", "text/html");
     }
 
     private string GenerateUniqueProtocolo() {
@@ -176,5 +218,17 @@ public class FormServidorController : ControllerBase {
         } while (_context.FormsServidores.Any(f => f.Protocolo == protocolo));
 
         return protocolo;
+    }
+
+    private static bool IsValidEmail(string email) {
+        if (string.IsNullOrWhiteSpace(email))
+            return false;
+
+        try {
+            var emailPattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
+            return Regex.IsMatch(email, emailPattern, RegexOptions.IgnoreCase);
+        } catch {
+            return false;
+        }
     }
 }
